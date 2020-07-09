@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaJam Coffee Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="forJavaJam.css">
+
+
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row content">
+                <div class="col-sm-3 sidenav">
+                    <img src="javacup.jpg" class="img-responsive" id="myImg">
+                    <br>
+                    <ul class="nav nav-pills nav-stacked text-center">
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">Menu</a></li>
+                        <li><a href="#section3">Music</a></li>
+                        <li><a href="#section3">Jobs</a></li>
+                        <li><a href="#section3">Gear</a></li>
+                    </ul><br>
+                </div>
+
+                <div class="col-sm-9">
+                    <div class="jumbotron myJumbo">
+                        <h1>JavaJam Coffee House</h1>
+                    </div>
+
+                    <img src="caferoom.jpg" class="img-responsive caferoom" alt="caferoom">
+                    <div class="container">
+                        <div class="javagear">
+                            <h1>JavaJam gear</h1>
+                            <h4>JavaJam gear not only looks good, it’s good to your wallet, too.</h4>
+                            <h4>Get a 10% discount when you wear a JavaJam shirt or bring in your
+                                JavaJam mug!</h4>
+
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="javashirt.jpg" class="img-responsive" alt="javashirt">
+                                </div>                               
+                                <div class="col-sm-9">
+                                    <h4>JavaJam shirts are comfortable to wear to school and
+                                        around town. 100% cotton. XL only. $14.95</h4>
+                                    <br><br>
+                                    <div class="input-group myClass1">
+                                        <label for="fname">Add quantity:</label><br>
+                                        <input type="text" class="form-control " id="shirtquantity" name="fname">
+                                    </div>
+                                    <br>
+                                    <input class="btn btn-success myClass1" type="button" value="Add to cart" id="myBtn">
+                                    <br>
+                                    <h4>Your total with tax: &#36<span id="demo">0.00</span></h4>                                 
+                                </div>            
+                            </div>
+
+                            <br><br><br>
+
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="javacoffecup.jpg" class="img-responsive" alt="javacoffecup">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h4>JavaJam cups carry a full load of caffeine (12 oz.) to
+                                        jump-start your morning. $9.95</h4>
+                                    <br><br>
+                                    <div class="input-group">
+                                        <label for="fname">Add quantity:</label><br>
+                                        <input type="text" class="form-control" id="cupquantity" name="fname">
+                                    </div>
+                                    <br>
+                                    <input class="btn btn-success" type="button" value="Add to cart" id="myBtn1">
+                                    <br>
+                                    <h4>Your total with tax: &#36<span id="demo1">0.00</span></h4>    
+                                </div>
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <p><i>Copyright &copy 2016 - <span id="year"></span> JavaJam Coffee House</i></p>
+            <a href="mailto:suxrobt@gmail.com" style="color: white;">suxrobt@gmail.com</a>
+        </footer>
+
+
+        <!--script>
+var x = document.getElementById("myBtn");s
+var y = document.getElementById("myBtn1");
+x.addEventListener("click", fun);
+y.addEventListener("click", fun1);
+function fun(){
+var x = Number(document.getElementById("shirtquantity").value);
+var N = 14.95;
+if(isNaN(x)){
+alert("Invalid input");
+}
+else{
+var total = x * (N + N * 0.08);
+document.getElementById("demo").innerHTML = total.toPrecision(4);
+}
+}
+function fun1(){  
+var x = Number(document.getElementById("cupquantity").value);
+var N = 9.95;
+if(isNaN(x)){
+alert("Invalid input");
+}
+else{
+var total = x * (N + N * 0.08);
+document.getElementById("demo1").innerHTML = total.toPrecision(4);
+}
+}
+
+var d = new Date(); 
+document.getElementById("year").innerHTML= d.getFullYear();
+</script-->
+        <script src="forJavaJam.js" type="text/javascript"></script>
+    </body>
+</html>
